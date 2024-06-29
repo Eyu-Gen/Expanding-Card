@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+}
+
+.imageSection{
+    width: 5vw;
+    height: 80vh;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: flex 0.7s ease-in;
+    -webkit-transition: all 700ms ease-in;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 660px) {
+    .imageSection{
+        width: 30px;
+        height: 70vh;
+    }
+}
+
